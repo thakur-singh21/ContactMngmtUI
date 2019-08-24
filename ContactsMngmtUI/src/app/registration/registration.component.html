@@ -1,0 +1,38 @@
+<mat-card class="dashboard-card border" style="margin-top: 100px; width: 50%">
+    <mat-card-header>
+      <mat-card-title>Register User</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="form-inline" [formGroup]="registationForm">
+        <table  cellspacing="0" class="mt-5">
+          <tr>
+            <td>
+              <mat-form-field class="demo-full-width mr-sm-5">
+              <input matInput placeholder="First Name" formControlName="firstName"  required>
+              </mat-form-field>
+            </td>
+          </tr>
+            <tr>
+            <td>
+                <mat-form-field class="demo-full-width mr-sm-5">
+                <input matInput placeholder="Last Name" formControlName="lastName" required> 
+                </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+          <td><mat-form-field class="demo-full-width mr-sm-5">
+            <input matInput placeholder="UserName"  formControlName="userName"  required>
+          </mat-form-field></td></tr>
+          <tr>
+          <td><mat-form-field class="demo-full-width mr-sm-5">
+            <input matInput placeholder="Password" type="password" formControlName="passwrd"  required>
+          </mat-form-field></td>
+        </tr></table>
+      </form>
+      
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="addUser()" color="primary">Add User</button>
+    </mat-card-actions>
+  </mat-card>
+

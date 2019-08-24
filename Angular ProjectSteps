@@ -1,0 +1,13 @@
+npm install -g @angular/cli
+ng new 'ProjectName'
+npm install bootstrap --save
+npm install --save @angular/material @angular/cdk @angular/animations
+
+index.html header
+<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+style.css
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+ if needed generate dashborad component
+ ng generate @angular/material:material-dashboard --name = <Give_Any_Name>
