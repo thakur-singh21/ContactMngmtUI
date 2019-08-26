@@ -16,11 +16,11 @@ export class LoginService {
 
 
   public saveUsers(user: any) {
-    return this.http.post(this.baseUrl+'save', user);
+    return this.http.post(this.baseUrl + 'save', user);
   }
   public login(user: any) {
     console.log(user);
-    
-    return this.http.post<User>(this.baseUrl+'login', user, this.httpOptions);
-  }n
+
+    return this.http.post<User>(this.baseUrl + 'login', user, this.httpOptions);
+  } n
 }

@@ -28,16 +28,16 @@ export class LoginComponent implements OnInit {
   login() {
     if(this.loginForm.valid) {
       this.router.navigate(['Home']);
-      this.loginService.login(this.loginForm.value).subscribe(res => {
-          //this.successStatus = res;
-          this.user = res;
-          console.log(res);
-          if (this.user.username !== null) {
-            sessionStorage.setItem('user', this.user.username.toString())
-          this.router.navigate(['Home']);
-          }
+      // this.loginService.login(this.loginForm.value).subscribe(res => {
+      //     //this.successStatus = res;
+      //     this.user = res;
+      //     console.log(res);
+      //     if (this.user.username !== null) {
+      //       sessionStorage.setItem('user', this.user.username.toString())
+      //     this.router.navigate(['Home']);
+      //     }
       
-      });
+      // });
       
         
     } else {
